@@ -20,10 +20,24 @@ namespace Login
         private void quảnLýLươngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Luong frmLuong = new Luong();
-            TrangChu frmHT = new TrangChu();
-            frmLuong.MdiParent = this;
+            //TrangChu frmHT = new TrangChu();
+            //frmLuong.MdiParent = this;
             frmLuong.Show();
-            frmHT.Hide();
+            this.Hide();
+        }
+
+        private void quảnLýThôngTinToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NhanVien frmNhanVien = new NhanVien();
+            frmNhanVien.Show();
+            this.Hide();
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            Login frmLogin = new Login();
+            frmLogin.Show();
+            this.Close();
         }
     }
 }

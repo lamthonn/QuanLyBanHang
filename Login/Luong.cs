@@ -16,5 +16,12 @@ namespace Login
         {
             InitializeComponent();
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            TrangChu frmHT = new TrangChu();
+            frmHT.Show();
+            this.Close();
+        }
     }
 }
