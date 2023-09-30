@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietPhieuNhap.cs" />
     <Compile Include="connect.cs" />
     <Compile Include="HoaDon.cs">
       <SubType>Form</SubType>

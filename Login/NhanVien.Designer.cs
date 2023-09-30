@@ -31,6 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnNhapLai = new System.Windows.Forms.Button();
             this.txtCCCD = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -54,7 +55,6 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
-            this.btnNhapLai = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -108,6 +108,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1137, 207);
             this.panel2.TabIndex = 1;
+            // 
+            // btnNhapLai
+            // 
+            this.btnNhapLai.Location = new System.Drawing.Point(781, 138);
+            this.btnNhapLai.Name = "btnNhapLai";
+            this.btnNhapLai.Size = new System.Drawing.Size(113, 32);
+            this.btnNhapLai.TabIndex = 22;
+            this.btnNhapLai.Text = "Nhập Lại";
+            this.btnNhapLai.UseVisualStyleBackColor = true;
+            this.btnNhapLai.Click += new System.EventHandler(this.btnNhapLai_Click);
             // 
             // txtCCCD
             // 
@@ -370,16 +380,7 @@
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.Size = new System.Drawing.Size(991, 269);
             this.dgvNhanVien.TabIndex = 9;
-            // 
-            // btnNhapLai
-            // 
-            this.btnNhapLai.Location = new System.Drawing.Point(781, 138);
-            this.btnNhapLai.Name = "btnNhapLai";
-            this.btnNhapLai.Size = new System.Drawing.Size(113, 32);
-            this.btnNhapLai.TabIndex = 22;
-            this.btnNhapLai.Text = "Nhập Lại";
-            this.btnNhapLai.UseVisualStyleBackColor = true;
-            this.btnNhapLai.Click += new System.EventHandler(this.btnNhapLai_Click);
+            this.dgvNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellContentClick);
             // 
             // NhanVien
             // 

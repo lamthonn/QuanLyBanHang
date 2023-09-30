@@ -69,5 +69,15 @@ namespace Login.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z4732706846840_6715b18e9054cfc0a4770a0b9ea2ab1f {
+            get {
+                object obj = ResourceManager.GetObject("z4732706846840_6715b18e9054cfc0a4770a0b9ea2ab1f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -35,9 +35,30 @@ namespace Login
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            Login frmLogin = new Login();
+            ChiTietPhieuNhap frmLogin = new ChiTietPhieuNhap();
             frmLogin.Show();
             this.Close();
+        }
+
+        private void quảnLýSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SanPham frmSanPham = new SanPham();
+            frmSanPham.Show();
+            this.Hide();
+        }
+
+        private void quảnLýNahfCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NhaCungCap frmNhaCungCap = new NhaCungCap();
+            frmNhaCungCap.Show();
+            this.Hide();
+        }
+
+        private void quảnLýPhiếuNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PhieuNhap frmPhieuNhap = new PhieuNhap();
+            frmPhieuNhap.Show();
+            this.Hide();
         }
     }
 }

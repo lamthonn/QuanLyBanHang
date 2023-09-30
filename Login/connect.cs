@@ -10,7 +10,7 @@ namespace Login
 {
     internal class connect
     {
-        string constr = @"Data Source=LAPTOP-I6L7B4AE\SQLEXPRESS;Initial Catalog=QuanLyBanHang;Integrated Security=True";
+        string constr = @"Data Source=DINHHAI13092003;Initial Catalog=QuanLyBanHang;Integrated Security=True";
         SqlConnection conn;
 
         public connect() { 

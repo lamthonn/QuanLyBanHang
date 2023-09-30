@@ -126,5 +126,10 @@ namespace Login
             dgvNhanVien.DataSource = kn.LayDuLieu(truyVan);
 
         }
+
+        private void dgvNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
