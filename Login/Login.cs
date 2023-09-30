@@ -27,7 +27,7 @@ namespace Login
         {
             string truyVan = string.Format("SELECT * FROM TaiKhoan WHERE taiKhoan = '{0}' AND matKhau = '{1}'", txtTaiKhoan.Text, txtMatKhau.Text);
             DataTable tb = kn.LayDuLieu(truyVan);
-            if(tb.Rows.Count == 1 )
+            if(tb.Rows.Count >= 1 )
             {
                 MessageBox.Show("Đăng nhập thành công!");
                 TrangChu frmHeThong = new TrangChu();

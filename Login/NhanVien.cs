@@ -105,9 +105,9 @@ namespace Login
         private void btnXoa_Click(object sender, EventArgs e)
         {
             String truyVan = string.Format("DELETE FROM NhanVien WHERE maNV ='{0}'", txtMaNV.Text);
-
             if (txtMaNV.Text != "")
             {
+                
                 if (kn.ThucThi(truyVan))
                 {
                     MessageBox.Show("Xóa thành công!");
