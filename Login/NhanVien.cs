@@ -142,5 +142,10 @@ namespace Login
 
             btnThem.Enabled = true;
         }
+
+        private void dgvNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

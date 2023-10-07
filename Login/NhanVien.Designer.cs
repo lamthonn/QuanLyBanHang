@@ -56,9 +56,6 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -384,22 +381,16 @@
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.Size = new System.Drawing.Size(991, 269);
             this.dgvNhanVien.TabIndex = 9;
-            this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             // 
-            // bunifuElipse1
+            // btnNhapLai
             // 
-            this.bunifuElipse1.ElipseRadius = 35;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 5;
-            this.bunifuElipse2.TargetControl = this;
-            // 
-            // bunifuElipse3
-            // 
-            this.bunifuElipse3.ElipseRadius = 40;
-            this.bunifuElipse3.TargetControl = this;
+            this.btnNhapLai.Location = new System.Drawing.Point(781, 138);
+            this.btnNhapLai.Name = "btnNhapLai";
+            this.btnNhapLai.Size = new System.Drawing.Size(113, 32);
+            this.btnNhapLai.TabIndex = 22;
+            this.btnNhapLai.Text = "Nhập Lại";
+            this.btnNhapLai.UseVisualStyleBackColor = true;
+            this.btnNhapLai.Click += new System.EventHandler(this.btnNhapLai_Click);
             // 
             
             // NhanVien
