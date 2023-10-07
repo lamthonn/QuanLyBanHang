@@ -35,7 +35,7 @@ namespace Login
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            ChiTietPhieuNhap frmLogin = new ChiTietPhieuNhap();
+            Login frmLogin = new Login();
             frmLogin.Show();
             this.Close();
         }
@@ -60,5 +60,20 @@ namespace Login
             frmPhieuNhap.Show();
             this.Hide();
         }
+
+        private void quảnLýPhiếuXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HoaDon frmHoaDon = new HoaDon();
+            frmHoaDon.Show();
+            this.Hide();
+        }
+
+        //private void quảnLýPhiếuXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    HoaDon frmHoaDon = new HoaDon();
+        //    frmHoaDon.Show();
+        //    this.Hide();
+        //}
+
     }
 }

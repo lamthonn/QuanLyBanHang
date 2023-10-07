@@ -34,7 +34,7 @@ namespace Login
 
         public void GetData()
         {
-            string truyVan = "SELECT * FROM hoaDon";
+            string truyVan = "SELECT hoaDon.maHoaDon, hoaDon.ngayBan, hoaDon.maNV, ( SELECT SUM(CTHoaDon.soLuong * SanPham.gia - CTHoaDon.giamGia) FROM CTHoaDon INNER JOIN SanPham ON CTHoaDon.maSP = SanPham.maSP WHERE CTHoaDon.maHoaDon = hoaDon.maHoaDon) AS tongHoaDon FROM hoaDon;";
             dgvHienThi.DataSource = kn.LayDuLieu(truyVan);
         }
 
@@ -66,7 +66,7 @@ namespace Login
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string truy_van = string.Format("insert into hoaDon values('{0}','{1}','{2}')",
+            string truy_van = string.Format("insert into hoaDon values('{0}','{1}','{2},0)",
             txtMaHD.Text,
             dtNgayBan.Text,
             cmbMaNV.SelectedValue
@@ -90,7 +90,7 @@ namespace Login
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string truy_van = string.Format("update hoaDon set ngayBan='{0}', maNV='{1}' where maHoaDon='{2}'",
+            string truy_van = string.Format("update hoaDon set ngayBan='{0}', maNV='{1}', tongHoaDon='{4}' where maHoaDon='{2}'",
                 dtNgayBan.Text,
                 cmbMaNV.SelectedValue,
                 txtMaHD.Text
@@ -133,6 +133,13 @@ namespace Login
             TrangChu frmHT = new TrangChu();
             frmHT.Show();
             this.Close();
+        }
+
+        private void btnCTHoaDon_Click(object sender, EventArgs e)
+        {
+            ChiTietHoaDon frmCTHD = new ChiTietHoaDon();
+            frmCTHD.Show();
+            this.Hide();
         }
     }
 }

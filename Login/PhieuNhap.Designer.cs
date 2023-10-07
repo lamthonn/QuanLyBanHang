@@ -40,8 +40,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.cmbMaNCC = new System.Windows.Forms.ComboBox();
-            this.txtTienNhap = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.dtNgayNhap = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -110,7 +108,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1061, 57);
             this.panel2.TabIndex = 2;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // txtTimKiem
             // 
@@ -144,8 +141,6 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.btnLamMoi);
             this.groupBox1.Controls.Add(this.cmbMaNCC);
-            this.groupBox1.Controls.Add(this.txtTienNhap);
-            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.dtNgayNhap);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -172,15 +167,15 @@
             // cmbMaNV
             // 
             this.cmbMaNV.FormattingEnabled = true;
-            this.cmbMaNV.Location = new System.Drawing.Point(127, 118);
+            this.cmbMaNV.Location = new System.Drawing.Point(747, 79);
             this.cmbMaNV.Name = "cmbMaNV";
-            this.cmbMaNV.Size = new System.Drawing.Size(268, 28);
+            this.cmbMaNV.Size = new System.Drawing.Size(273, 28);
             this.cmbMaNV.TabIndex = 12;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 124);
+            this.label5.Location = new System.Drawing.Point(628, 87);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 20);
             this.label5.TabIndex = 27;
@@ -205,28 +200,6 @@
             this.cmbMaNCC.Name = "cmbMaNCC";
             this.cmbMaNCC.Size = new System.Drawing.Size(268, 28);
             this.cmbMaNCC.TabIndex = 4;
-            // 
-            // txtTienNhap
-            // 
-            this.txtTienNhap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTienNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTienNhap.Location = new System.Drawing.Point(747, 79);
-            this.txtTienNhap.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTienNhap.Name = "txtTienNhap";
-            this.txtTienNhap.Size = new System.Drawing.Size(275, 26);
-            this.txtTienNhap.TabIndex = 5;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(633, 86);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 20);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Tiền nhập:";
             // 
             // dtNgayNhap
             // 
@@ -309,6 +282,7 @@
             this.btnCTPN.TabIndex = 6;
             this.btnCTPN.Text = "Chi tiết phiếu nhập";
             this.btnCTPN.UseVisualStyleBackColor = true;
+            this.btnCTPN.Click += new System.EventHandler(this.btnCTPN_Click);
             // 
             // splitter2
             // 
@@ -459,8 +433,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.TextBox txtTienNhap;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Button btnCTPN;
