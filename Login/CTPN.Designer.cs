@@ -1,6 +1,6 @@
 ﻿namespace Login
 {
-    partial class ChiTietHoaDon
+    partial class CTPN
     {
         /// <summary>
         /// Required designer variable.
@@ -33,10 +33,10 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cmbMaHD = new System.Windows.Forms.ComboBox();
+            this.cmbMaPN = new System.Windows.Forms.ComboBox();
             this.cmbMaSP = new System.Windows.Forms.ComboBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
-            this.txtGiamGia = new System.Windows.Forms.TextBox();
+            this.txtDonGia = new System.Windows.Forms.TextBox();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -64,9 +64,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(395, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 37);
+            this.label1.Size = new System.Drawing.Size(379, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CHI TIẾT HÓA ĐƠN";
+            this.label1.Text = "CHI TIẾT PHIẾU NHẬP";
             // 
             // panel1
             // 
@@ -101,10 +101,10 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.cmbMaHD);
+            this.groupBox1.Controls.Add(this.cmbMaPN);
             this.groupBox1.Controls.Add(this.cmbMaSP);
             this.groupBox1.Controls.Add(this.txtSoLuong);
-            this.groupBox1.Controls.Add(this.txtGiamGia);
+            this.groupBox1.Controls.Add(this.txtDonGia);
             this.groupBox1.Controls.Add(this.btnLamMoi);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -120,18 +120,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chung";
             // 
-            // cmbMaHD
+            // cmbMaPN
             // 
-            this.cmbMaHD.FormattingEnabled = true;
-            this.cmbMaHD.Location = new System.Drawing.Point(156, 30);
-            this.cmbMaHD.Name = "cmbMaHD";
-            this.cmbMaHD.Size = new System.Drawing.Size(241, 28);
-            this.cmbMaHD.TabIndex = 2;
+            this.cmbMaPN.FormattingEnabled = true;
+            this.cmbMaPN.Location = new System.Drawing.Point(173, 30);
+            this.cmbMaPN.Name = "cmbMaPN";
+            this.cmbMaPN.Size = new System.Drawing.Size(241, 28);
+            this.cmbMaPN.TabIndex = 2;
             // 
             // cmbMaSP
             // 
             this.cmbMaSP.FormattingEnabled = true;
-            this.cmbMaSP.Location = new System.Drawing.Point(156, 78);
+            this.cmbMaSP.Location = new System.Drawing.Point(173, 76);
             this.cmbMaSP.Name = "cmbMaSP";
             this.cmbMaSP.Size = new System.Drawing.Size(241, 28);
             this.cmbMaSP.TabIndex = 3;
@@ -143,17 +143,17 @@
             this.txtSoLuong.Size = new System.Drawing.Size(241, 26);
             this.txtSoLuong.TabIndex = 4;
             // 
-            // txtGiamGia
+            // txtDonGia
             // 
-            this.txtGiamGia.Location = new System.Drawing.Point(702, 35);
-            this.txtGiamGia.Name = "txtGiamGia";
-            this.txtGiamGia.Size = new System.Drawing.Size(241, 26);
-            this.txtGiamGia.TabIndex = 5;
+            this.txtDonGia.Location = new System.Drawing.Point(702, 35);
+            this.txtDonGia.Name = "txtDonGia";
+            this.txtDonGia.Size = new System.Drawing.Size(241, 26);
+            this.txtDonGia.TabIndex = 5;
             // 
             // btnLamMoi
             // 
             this.btnLamMoi.ForeColor = System.Drawing.Color.Black;
-            this.btnLamMoi.Location = new System.Drawing.Point(434, 112);
+            this.btnLamMoi.Location = new System.Drawing.Point(426, 112);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(118, 34);
             this.btnLamMoi.TabIndex = 9;
@@ -166,9 +166,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(30, 38);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 20);
+            this.label6.Size = new System.Drawing.Size(137, 20);
             this.label6.TabIndex = 4;
-            this.label6.Text = "Mã hóa đơn:";
+            this.label6.Text = "Mã phiếu nhập:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label5
@@ -176,9 +176,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(568, 38);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 20);
+            this.label5.Size = new System.Drawing.Size(79, 20);
             this.label5.TabIndex = 3;
-            this.label5.Text = "Giảm giá:";
+            this.label5.Text = "Đơn giá:";
             // 
             // label4
             // 
@@ -290,7 +290,7 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // ChiTietHoaDon
+            // CTPN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -301,9 +301,9 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Name = "ChiTietHoaDon";
+            this.Name = "CTPN";
             this.Text = "Chi Tiết Hóa Đơn";
-            this.Load += new System.EventHandler(this.ChiTietHoaDon_Load);
+            this.Load += new System.EventHandler(this.CTPN_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -327,10 +327,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbMaHD;
+        private System.Windows.Forms.ComboBox cmbMaPN;
         private System.Windows.Forms.ComboBox cmbMaSP;
         private System.Windows.Forms.TextBox txtSoLuong;
-        private System.Windows.Forms.TextBox txtGiamGia;
+        private System.Windows.Forms.TextBox txtDonGia;
         private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.DataGridView dgvChiTietHoaDon;
         private System.Windows.Forms.GroupBox groupBox2;

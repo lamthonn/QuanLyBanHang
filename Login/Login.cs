@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Login
 {
-    public partial class ChiTietPhieuNhap : Form
+    public partial class Login : Form
     {
-        public ChiTietPhieuNhap()
+        public Login()
         {
             InitializeComponent();
         }

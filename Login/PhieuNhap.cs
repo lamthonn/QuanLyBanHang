@@ -44,7 +44,7 @@ namespace Login
 
         public void GetData()
         {
-            string truyVan = "SELECT * FROM PhieuNhap";
+            string truyVan = "SELECT PhieuNhap.maPhieuNhap, PhieuNhap.maNCC, PhieuNhap.ngayNhap, PhieuNhap.maNV,( SELECT SUM(CTPhieuNhap.soLuong * CTPhieuNhap.donGia) FROM CTPhieuNhap WHERE CTPhieuNhap.maPhieuNhap = PhieuNhap.maPhieuNhap) AS tienNhap FROM PhieuNhap;";
             dgvPhieuNhap.DataSource = kn.LayDuLieu(truyVan);
         }
 
@@ -61,7 +61,6 @@ namespace Login
                 txtMaPN.Text = dgvPhieuNhap.Rows[r].Cells["maPhieuNhap"].Value.ToString();
                 cmbMaNCC.Text = dgvPhieuNhap.Rows[r].Cells["maNCC"].Value.ToString();
                 dtNgayNhap.Text = dgvPhieuNhap.Rows[r].Cells["ngayNhap"].Value.ToString();
-                txtTienNhap.Text = dgvPhieuNhap.Rows[r].Cells["tienNhap"].Value.ToString();
                 cmbMaNV.Text = dgvPhieuNhap.Rows[r].Cells["maNV"].Value.ToString();
             }
         }
@@ -72,7 +71,6 @@ namespace Login
             dtNgayNhap.Text = "";
             cmbMaNCC.SelectedValue = "";
             cmbMaNV.SelectedValue = "";
-            txtTienNhap.Text = "";
             btnThem.Enabled = true;
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
@@ -86,11 +84,10 @@ namespace Login
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string truy_van = string.Format("insert into PhieuNhap values('{0}','{1}','{2}','{3}','{4}')",
+            string truy_van = string.Format("insert into PhieuNhap values('{0}','{1}','{2}',0,'{4}')",
                 txtMaPN.Text,
                 cmbMaNCC.SelectedValue,
                 dtNgayNhap.Text,
-                txtTienNhap.Text,
                 cmbMaNV.SelectedValue
                 );
             if (kn.ThucThi(truy_van) == true)
@@ -106,10 +103,9 @@ namespace Login
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string truy_van = string.Format("update PhieuNhap set maNCC='{0}', ngayNhap ='{1}', tienNhap='{2}', maNV='{3}' where maPhieuNhap='{4}'",
+            string truy_van = string.Format("update PhieuNhap set maNCC='{0}', ngayNhap ='{1}',tienNhap=0, maNV='{2}' where maPhieuNhap='{3}'",
                 cmbMaNCC.SelectedValue,
                 dtNgayNhap.Text,
-                txtTienNhap.Text,
                 cmbMaNV.SelectedValue,
                 txtMaPN.Text
             );
@@ -155,9 +151,12 @@ namespace Login
             dgvPhieuNhap.DataSource = kn.LayDuLieu(truy_van);
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
 
+        private void btnCTPN_Click(object sender, EventArgs e)
+        {
+            CTPN frmCTHD = new CTPN();
+            frmCTHD.Show();
+            this.Hide();
         }
     }
 }

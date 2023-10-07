@@ -64,6 +64,9 @@ namespace Login
             txtTenSP.Text = string.Empty;
             txtGia.Text = string.Empty;
             txtSoLuong.Text = string.Empty;
+            btnThem.Enabled = true;
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -130,6 +133,11 @@ namespace Login
                 txtTimKiem.Text
             );
             dgvSanPham.DataSource = kn.LayDuLieu(truy_van);
+        }
+
+        private void txtMaSP_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

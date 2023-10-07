@@ -61,23 +61,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="ChiTietPhieuNhap.cs" />
-=======
     <Compile Include="ChiTietHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChiTietHoaDon.Designer.cs">
       <DependentUpon>ChiTietHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChiTietPhieuNhap.cs">
+    <Compile Include="connect.cs" />
+    <Compile Include="CTPN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChiTietPhieuNhap.Designer.cs">
-      <DependentUpon>ChiTietPhieuNhap.cs</DependentUpon>
+    <Compile Include="CTPN.Designer.cs">
+      <DependentUpon>CTPN.cs</DependentUpon>
     </Compile>
->>>>>>> f3fec10250f6439ffc38c67fa451834d92118b17
-    <Compile Include="connect.cs" />
     <Compile Include="HoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +124,12 @@
     <Compile Include="TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChiTietHoaDon.resx">
+      <DependentUpon>ChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTPN.resx">
+      <DependentUpon>CTPN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HoaDon.resx">
       <DependentUpon>HoaDon.cs</DependentUpon>
     </EmbeddedResource>
