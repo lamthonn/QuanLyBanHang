@@ -39,5 +39,12 @@ namespace Login
             frmLogin.Show();
             this.Close();
         }
+
+        private void danhSáchHàngTồnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongKeHangTon frmTKHT = new ThongKeHangTon();
+            frmTKHT.Show();
+            this.Hide();
+        }
     }
 }

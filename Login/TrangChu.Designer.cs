@@ -127,14 +127,15 @@
             // bóaCáoDoanhThuToolStripMenuItem
             // 
             this.bóaCáoDoanhThuToolStripMenuItem.Name = "bóaCáoDoanhThuToolStripMenuItem";
-            this.bóaCáoDoanhThuToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
+            this.bóaCáoDoanhThuToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.bóaCáoDoanhThuToolStripMenuItem.Text = "Báo cáo doanh thu";
             // 
             // danhSáchHàngTồnToolStripMenuItem
             // 
             this.danhSáchHàngTồnToolStripMenuItem.Name = "danhSáchHàngTồnToolStripMenuItem";
-            this.danhSáchHàngTồnToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
+            this.danhSáchHàngTồnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.danhSáchHàngTồnToolStripMenuItem.Text = "Danh sách hàng tồn";
+            this.danhSáchHàngTồnToolStripMenuItem.Click += new System.EventHandler(this.danhSáchHàngTồnToolStripMenuItem_Click);
             // 
             // btnDangXuat
             // 

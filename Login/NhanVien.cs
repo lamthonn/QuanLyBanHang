@@ -54,6 +54,7 @@ namespace Login
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+
             string truyVan = string.Format("INSERT INTO NhanVien VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}','{6}')", txtMaNV.Text,
                                      txtTenNV.Text,
                                      dtpNgaySinh.Value,
@@ -125,6 +126,21 @@ namespace Login
             string truyVan = string.Format("SELECT *  FROM NhanVien  WHERE maNV LIKE N'%{0}%' OR \n tenNV LIKE N'%{0}%' OR \n ngaySinh LIKE N'%{0}%' OR \n  gioiTinh LIKE N'%{0}%' OR \n sdt LIKE '%{0}%' OR \n diaChi LIKE N'%{0}%' OR \n cccd LIKE '%{0}%'", txtTimKiem.Text);
             dgvNhanVien.DataSource = kn.LayDuLieu(truyVan);
 
+        }
+
+        private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int r = e.RowIndex;
+
+            txtMaNV.Text = dgvNhanVien.Rows[r].Cells["maNV"].Value.ToString();
+            txtTenNV.Text = dgvNhanVien.Rows[r].Cells["tenNV"].Value.ToString();
+            dtpNgaySinh.Text = dgvNhanVien.Rows[r].Cells["ngaySinh"].Value.ToString();
+            cmbGioiTinh.Text = dgvNhanVien.Rows[r].Cells["gioiTinh"].Value.ToString();
+            txtSDT.Text = dgvNhanVien.Rows[r].Cells["sdt"].Value.ToString();
+            txtDiaChi.Text = dgvNhanVien.Rows[r].Cells["diaChi"].Value.ToString();
+            txtCCCD.Text = dgvNhanVien.Rows[r].Cells["cccd"].Value.ToString();
+
+            btnThem.Enabled = true;
         }
     }
 }
