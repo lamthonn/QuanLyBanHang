@@ -39,5 +39,12 @@ namespace Login
                 MessageBox.Show("Đăng nhập thất bại!");
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            DangKy frmRegister = new DangKy();
+            frmRegister.Show();
+            this.Hide();
+        }
     }
 }

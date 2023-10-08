@@ -66,7 +66,7 @@ namespace Login
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string truy_van = string.Format("insert into hoaDon values('{0}','{1}','{2},0)",
+            string truy_van = string.Format("insert into hoaDon values('{0}','{1}','{2}',0)",
             txtMaHD.Text,
             dtNgayBan.Text,
             cmbMaNV.SelectedValue

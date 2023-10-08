@@ -73,6 +73,46 @@ namespace Login.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap phan_mem_quan_ly_cua_hang_thoi_trang {
+            get {
+                object obj = ResourceManager.GetObject("phan-mem-quan-ly-cua-hang-thoi-trang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phan_mem_quan_ly_cua_hang_thoi_trang1 {
+            get {
+                object obj = ResourceManager.GetObject("phan-mem-quan-ly-cua-hang-thoi-trang1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap register_la_gi {
+            get {
+                object obj = ResourceManager.GetObject("register-la-gi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trangchu {
+            get {
+                object obj = ResourceManager.GetObject("trangchu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap z4732706846840_6715b18e9054cfc0a4770a0b9ea2ab1f {
             get {
                 object obj = ResourceManager.GetObject("z4732706846840_6715b18e9054cfc0a4770a0b9ea2ab1f", resourceCulture);

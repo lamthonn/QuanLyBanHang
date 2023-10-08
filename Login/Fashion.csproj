@@ -235,53 +235,59 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChiTietHoaDon.cs">
+    <Compile Include="SanPham\hoaDon\ChiTietHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChiTietHoaDon.Designer.cs">
+    <Compile Include="SanPham\hoaDon\ChiTietHoaDon.Designer.cs">
       <DependentUpon>ChiTietHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="connect.cs" />
-    <Compile Include="CTPN.cs">
+    <Compile Include="SanPham\phieuNhap\CTPN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CTPN.Designer.cs">
+    <Compile Include="SanPham\phieuNhap\CTPN.Designer.cs">
       <DependentUpon>CTPN.cs</DependentUpon>
     </Compile>
-    <Compile Include="HoaDon.cs">
+    <Compile Include="Loginn\DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HoaDon.Designer.cs">
+    <Compile Include="Loginn\DangKy.Designer.cs">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanPham\hoaDon\HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanPham\hoaDon\HoaDon.Designer.cs">
       <DependentUpon>HoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="DangNhap.cs">
+    <Compile Include="Loginn\DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DangNhap.Designer.cs">
+    <Compile Include="Loginn\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Luong.cs">
+    <Compile Include="NhanVien\Luong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Luong.Designer.cs">
+    <Compile Include="NhanVien\Luong.Designer.cs">
       <DependentUpon>Luong.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhaCungCap.cs">
+    <Compile Include="SanPham\NhaCungCap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NhaCungCap.Designer.cs">
+    <Compile Include="SanPham\NhaCungCap.Designer.cs">
       <DependentUpon>NhaCungCap.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhanVien.cs">
+    <Compile Include="NhanVien\NhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NhanVien.Designer.cs">
+    <Compile Include="NhanVien\NhanVien.Designer.cs">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhieuNhap.cs">
+    <Compile Include="SanPham\phieuNhap\PhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PhieuNhap.Designer.cs">
+    <Compile Include="SanPham\phieuNhap\PhieuNhap.Designer.cs">
       <DependentUpon>PhieuNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -291,17 +297,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SanPham.cs">
+    <Compile Include="SanPham\SanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SanPham.Designer.cs">
+    <Compile Include="SanPham\SanPham.Designer.cs">
       <DependentUpon>SanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongKeHangTon.cs">
+    <Compile Include="ThongKe\ThongKeDoanhthu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThongKeHangTon.Designer.cs">
-      <DependentUpon>ThongKeHangTon.cs</DependentUpon>
+    <Compile Include="ThongKe\ThongKeDoanhthu.Designer.cs">
+      <DependentUpon>ThongKeDoanhthu.cs</DependentUpon>
     </Compile>
     <Compile Include="TrangChu.cs">
       <SubType>Form</SubType>
@@ -309,28 +315,31 @@
     <Compile Include="TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ChiTietHoaDon.resx">
+    <EmbeddedResource Include="SanPham\hoaDon\ChiTietHoaDon.resx">
       <DependentUpon>ChiTietHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CTPN.resx">
+    <EmbeddedResource Include="SanPham\phieuNhap\CTPN.resx">
       <DependentUpon>CTPN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HoaDon.resx">
+    <EmbeddedResource Include="Loginn\DangKy.resx">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanPham\hoaDon\HoaDon.resx">
       <DependentUpon>HoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DangNhap.resx">
+    <EmbeddedResource Include="Loginn\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Luong.resx">
+    <EmbeddedResource Include="NhanVien\Luong.resx">
       <DependentUpon>Luong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhaCungCap.resx">
+    <EmbeddedResource Include="SanPham\NhaCungCap.resx">
       <DependentUpon>NhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhanVien.resx">
+    <EmbeddedResource Include="NhanVien\NhanVien.resx">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PhieuNhap.resx">
+    <EmbeddedResource Include="SanPham\phieuNhap\PhieuNhap.resx">
       <DependentUpon>PhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -338,11 +347,11 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SanPham.resx">
+    <EmbeddedResource Include="SanPham\SanPham.resx">
       <DependentUpon>SanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThongKeHangTon.resx">
-      <DependentUpon>ThongKeHangTon.cs</DependentUpon>
+    <EmbeddedResource Include="ThongKe\ThongKeDoanhthu.resx">
+      <DependentUpon>ThongKeDoanhthu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
@@ -378,6 +387,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\z4732706838972_26ffcac17c56e534b1ce15742d895568.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register-la-gi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phan-mem-quan-ly-cua-hang-thoi-trang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phan-mem-quan-ly-cua-hang-thoi-trang1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trangchu.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />

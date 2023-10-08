@@ -35,7 +35,7 @@ namespace Login
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            Login frmLogin = new Login();
+            DangNhap frmLogin = new DangNhap();
             frmLogin.Show();
             this.Close();
         }
