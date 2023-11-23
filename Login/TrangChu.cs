@@ -68,6 +68,13 @@ namespace Login
             this.Hide();
         }
 
+        private void bóaCáoDoanhThuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongKeDoanhthu frm = new ThongKeDoanhthu();
+            frm.Show();
+            this.Hide();
+        }
+
         //private void quảnLýPhiếuXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         //{
         //    HoaDon frmHoaDon = new HoaDon();

@@ -25,7 +25,7 @@ namespace Login
         }
         public void GetData()
         {
-            string truyVan = "SELECT * FROM NhaCungCap";
+            string truyVan = "SELECT * FROM sanPham";
             dgvSanPham.DataSource = kn.LayDuLieu(truyVan);
         }
 
@@ -94,13 +94,13 @@ namespace Login
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string truy_van = string.Format("update SanPham set maSP = N'{0}, tenSP = {1}, gia = N'{3}', soLuong =N'{4}' where maSP = N{0}",
+            string truy_van = string.Format("update SanPham set maSP = N'{0}', tenSP = '{1}', gia = N'{2}', soLuong =N'{3}' where maSP = N'{0}'",
                 txtMaSP.Text,
                 txtTenSP.Text,
                 txtGia.Text,
                 txtSoLuong.Text
             );
-            if (kn.ThucThi(truy_van) == true)
+            if (kn.ThucThi(truy_van))
             {
                 MessageBox.Show("Sửa thành công!");
                 btnLamMoi.PerformClick();

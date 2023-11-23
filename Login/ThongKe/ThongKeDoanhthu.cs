@@ -30,5 +30,12 @@ namespace Login
             dgvThongKe.DataSource = kn.LayDuLieu(thongKe);
               
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            TrangChu frmHT =new TrangChu();
+            frmHT.Show();
+            this.Close();
+        }
     }
 }

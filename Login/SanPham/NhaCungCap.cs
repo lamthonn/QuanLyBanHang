@@ -91,13 +91,13 @@ namespace Login
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string truy_van = string.Format("update NhaCungCap set maNCC = N'{0}, tenNCC = {1}, sdt = N'{2}', diaChi =N'{3}' where maNCC = N{0}",
+            string truy_van = string.Format("update NhaCungCap set tenNCC = N'{1}', sdt = N'{2}', diaChi =N'{3}' where maNCC = N'{0}'",
                 txtMaNCC.Text,
                 txtTenNCC.Text,
                 txtSDT.Text,
                 txtDiaChi.Text
             );
-            if (kn.ThucThi(truy_van) == true)
+            if (kn.ThucThi(truy_van))
             {
                 MessageBox.Show("Sửa thành công!");
                 btnLamMoi.PerformClick();

@@ -50,6 +50,11 @@ namespace Login
             txtSDT.Text = string.Empty;
             txtDiaChi.Text = string.Empty;
             txtCCCD.Text = string.Empty;
+
+            btnAdd.Enabled = true;
+            btnUpdate.Enabled = false;
+            btnDelete.Enabled = false;
+            
         }
 
         //private void btnAdd_Click(object sender, EventArgs e)
@@ -90,11 +95,11 @@ namespace Login
         //    btnThem.Enabled = true;
         //}
 
-        private void btnAdd_Click_1(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            string truyVan = string.Format("INSERT INTO NhanVien VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}','{6}')", txtMaNV.Text,
+            string truyVan = string.Format("INSERT INTO NhanVien VALUES(N'{0}', N'{1}', N'{2}', N'{3}', N'{4}', N'{5}',N'{6}')", txtMaNV.Text,
                                      txtTenNV.Text,
-                                     dtpNgaySinh.Value,
+                                     dtpNgaySinh.Text,
                                      cmbGioiTinh.Text,
                                      txtSDT.Text,
                                      txtDiaChi.Text,
@@ -178,7 +183,9 @@ namespace Login
             txtDiaChi.Text = dgvNhanVien.Rows[r].Cells["diaChi"].Value.ToString();
             txtCCCD.Text = dgvNhanVien.Rows[r].Cells["cccd"].Value.ToString();
 
-            btnAdd.Enabled = true;
+            btnAdd.Enabled = false;
+            btnUpdate.Enabled = true;
+            btnDelete.Enabled = true;
         }
     }
 }

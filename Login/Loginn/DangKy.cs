@@ -59,9 +59,9 @@ namespace Login
                     this.Close();
                 }
             }
-            catch (Exception ex) { }
+            catch{ }
             {
-                MessageBox.Show("Error");
+                Console.WriteLine("Error");
             }
         }
     }
