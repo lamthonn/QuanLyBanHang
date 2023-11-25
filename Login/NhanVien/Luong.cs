@@ -44,83 +44,50 @@ namespace Login
             txtNgayCong.Text = "";
             txtHSLuong.Text = "";
             txtNgayCong.Text = "";
-            txtTinhLuong.Text = "";
-            txtTinhLuong.Text = "";
             cbThang.Text = "";
         }
 
-        private void btnTinhLuong_Click(object sender, EventArgs e)
+        private string tinhLuong(string hsluong, string ngaycong, string Thuong)
         {
-            if (txtHSLuong.Text != "" && txtNgayCong.Text != "")
+            string tongluong = "";
+            if (hsluong != "" && ngaycong != "")
             {
                 if (txtThuong.Text != "")
                 {
-                    float HSLuong = Convert.ToInt32(txtHSLuong.Text);
-                    int ngayCong = Convert.ToInt32(txtNgayCong.Text);
-                    float thuong = Convert.ToInt32(txtThuong.Text);
-                    txtTinhLuong.Text = ((HSLuong * ngayCong) + thuong).ToString();
+                    float HSLuong = Convert.ToInt32(hsluong);
+                    int ngayCong = Convert.ToInt32(ngaycong);
+                    float thuong = Convert.ToInt32(Thuong);
+                    tongluong = ((HSLuong * ngayCong) + thuong).ToString();
                 }
                 else
                 {
-                    float HSLuong = Convert.ToInt32(txtHSLuong.Text);
-                    int ngayCong = Convert.ToInt32(txtNgayCong.Text);
-                    txtTinhLuong.Text = (HSLuong * ngayCong).ToString();
+                    float HSLuong = Convert.ToInt32(hsluong);
+                    int ngayCong = Convert.ToInt32(ngaycong);
+                    tongluong = (HSLuong * ngayCong).ToString();
                 }
             }
             else
             {
-                //float HSLuong = Convert.ToInt32(txtHSLuong.Text);
-                //int ngayCong = Convert.ToInt32(txtNgayCong.Text);
-                if (txtHSLuong.Text == "")
+                if (hsluong == "")
                 {
                     MessageBox.Show("Nhập hệ số lương!");
                 }
                 else
                 {
-                    if (txtNgayCong.Text == "")
+                    if (ngaycong == "")
                     {
                         MessageBox.Show("Nhập số ngày Công");
                     }
                 }
             }
+
+            return tongluong;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string TongLuong = "";
-            if (txtHSLuong.Text != "" && txtNgayCong.Text != "")
-            {
-                if (txtThuong.Text != "")
-                {
-                    float HSLuong = Convert.ToInt32(txtHSLuong.Text);
-                    int ngayCong = Convert.ToInt32(txtNgayCong.Text);
-                    float thuong = Convert.ToInt32(txtThuong.Text);
-                    TongLuong = ((HSLuong * ngayCong) + thuong).ToString();
-                }
-                else
-                {
-                    float HSLuong = Convert.ToInt32(txtHSLuong.Text);
-                    int ngayCong = Convert.ToInt32(txtNgayCong.Text);
-                    TongLuong = (HSLuong * ngayCong).ToString();
-                }
-            }
-            else
-            {
-                //float HSLuong = Convert.ToInt32(txtHSLuong.Text);
-                //int ngayCong = Convert.ToInt32(txtNgayCong.Text);
-                if (txtHSLuong.Text == "")
-                {
-                    MessageBox.Show("Nhập hệ số lương!");
-                }
-                else
-                {
-                    if (txtNgayCong.Text == "")
-                    {
-                        MessageBox.Show("Nhập số ngày Công");
-                    }
-                }
-            }
-            string truyVan = $"INSERT INTO Luong VALUES ('{txtMaBL.Text}','{txtMaNV.Text}',{txtNgayCong.Text},{txtHSLuong.Text},{txtThuong.Text},{TongLuong},{cbThang.Text})";
+            
+            string truyVan = $"INSERT INTO Luong VALUES ('{txtMaBL.Text}','{txtMaNV.Text}',{txtNgayCong.Text},{txtHSLuong.Text},{txtThuong.Text},{tinhLuong(txtHSLuong.Text, txtNgayCong.Text, txtThuong.Text)},{cbThang.Text})";
 
             if (txtMaNV.Text != "")
             {
@@ -139,13 +106,14 @@ namespace Login
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            
             string truyVan = string.Format("UPDATE LUONG SET ngayCong ={2}, HSluong = {3}, Thuong = {4}, tongLuong ={5}, thang ='{6}' WHERE maNV ='{1}'AND maBangLuong ='{0}'",
                                             txtMaBL.Text,
                                             txtMaNV.Text,
                                             txtNgayCong.Text,
                                             txtHSLuong.Text,
                                             txtThuong.Text,
-                                            txtTinhLuong.Text,
+                                            tinhLuong(txtHSLuong.Text, txtNgayCong.Text, txtThuong.Text),
                                             cbThang.Text);
 
             if (txtMaNV.Text != "")
@@ -206,7 +174,6 @@ namespace Login
                 txtNgayCong.Text = dgvLuong.Rows[r].Cells["ngayCong"].Value.ToString();
                 txtHSLuong.Text = dgvLuong.Rows[r].Cells["HSLuong"].Value.ToString();
                 txtThuong.Text = dgvLuong.Rows[r].Cells["Thuong"].Value.ToString();
-                txtTinhLuong.Text = dgvLuong.Rows[r].Cells["tongLuong"].Value.ToString();
                 cbThang.Text = dgvLuong.Rows[r].Cells["thang"].Value.ToString();
 
             }
