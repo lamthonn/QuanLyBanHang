@@ -41,14 +41,12 @@
             this.txtNgayCong = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtTinhLuong = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnIn = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.btnTinhLuong = new System.Windows.Forms.Button();
             this.dgvLuong = new System.Windows.Forms.DataGridView();
             this.txtMaBL = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -86,7 +84,7 @@
             this.label2.Location = new System.Drawing.Point(290, 4);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(306, 49);
+            this.label2.Size = new System.Drawing.Size(298, 48);
             this.label2.TabIndex = 1;
             this.label2.Text = "DANH MỤC LƯƠNG";
             // 
@@ -205,16 +203,6 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "Hệ Số Lương:";
             // 
-            // txtTinhLuong
-            // 
-            this.txtTinhLuong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTinhLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.txtTinhLuong.Location = new System.Drawing.Point(663, 635);
-            this.txtTinhLuong.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTinhLuong.Name = "txtTinhLuong";
-            this.txtTinhLuong.Size = new System.Drawing.Size(225, 23);
-            this.txtTinhLuong.TabIndex = 8;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
@@ -287,20 +275,6 @@
             this.btnThem.Text = "Thêm ";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnTinhLuong
-            // 
-            this.btnTinhLuong.BackColor = System.Drawing.Color.White;
-            this.btnTinhLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTinhLuong.ForeColor = System.Drawing.Color.Black;
-            this.btnTinhLuong.Location = new System.Drawing.Point(539, 632);
-            this.btnTinhLuong.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTinhLuong.Name = "btnTinhLuong";
-            this.btnTinhLuong.Size = new System.Drawing.Size(115, 30);
-            this.btnTinhLuong.TabIndex = 7;
-            this.btnTinhLuong.Text = "Tính Lương";
-            this.btnTinhLuong.UseVisualStyleBackColor = false;
-            this.btnTinhLuong.Click += new System.EventHandler(this.btnTinhLuong_Click);
             // 
             // dgvLuong
             // 
@@ -427,9 +401,7 @@
             this.Controls.Add(this.txtMaBL);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dgvLuong);
-            this.Controls.Add(this.btnTinhLuong);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.txtTinhLuong);
             this.Controls.Add(this.txtNgayCong);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtHSLuong);
@@ -466,7 +438,6 @@
         private System.Windows.Forms.TextBox txtNgayCong;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtTinhLuong;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnIn;
@@ -475,7 +446,6 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Button btnTimKiem;
-        private System.Windows.Forms.Button btnTinhLuong;
         private System.Windows.Forms.DataGridView dgvLuong;
         private System.Windows.Forms.TextBox txtMaBL;
         private System.Windows.Forms.Label label6;

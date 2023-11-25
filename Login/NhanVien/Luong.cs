@@ -87,14 +87,40 @@ namespace Login
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string truyVan = string.Format("INSERT INTO Luong VALUES ('{0}','{1}',{2},{3},{4},{5},{6})",
-                                            txtMaBL.Text,
-                                            txtMaNV.Text,
-                                            txtNgayCong.Text,
-                                            txtHSLuong.Text,
-                                            txtThuong.Text,
-                                            txtTinhLuong.Text,
-                                            cbThang.Text);
+            string TongLuong = "";
+            if (txtHSLuong.Text != "" && txtNgayCong.Text != "")
+            {
+                if (txtThuong.Text != "")
+                {
+                    float HSLuong = Convert.ToInt32(txtHSLuong.Text);
+                    int ngayCong = Convert.ToInt32(txtNgayCong.Text);
+                    float thuong = Convert.ToInt32(txtThuong.Text);
+                    TongLuong = ((HSLuong * ngayCong) + thuong).ToString();
+                }
+                else
+                {
+                    float HSLuong = Convert.ToInt32(txtHSLuong.Text);
+                    int ngayCong = Convert.ToInt32(txtNgayCong.Text);
+                    TongLuong = (HSLuong * ngayCong).ToString();
+                }
+            }
+            else
+            {
+                //float HSLuong = Convert.ToInt32(txtHSLuong.Text);
+                //int ngayCong = Convert.ToInt32(txtNgayCong.Text);
+                if (txtHSLuong.Text == "")
+                {
+                    MessageBox.Show("Nhập hệ số lương!");
+                }
+                else
+                {
+                    if (txtNgayCong.Text == "")
+                    {
+                        MessageBox.Show("Nhập số ngày Công");
+                    }
+                }
+            }
+            string truyVan = $"INSERT INTO Luong VALUES ('{txtMaBL.Text}','{txtMaNV.Text}',{txtNgayCong.Text},{txtHSLuong.Text},{txtThuong.Text},{TongLuong},{cbThang.Text})";
 
             if (txtMaNV.Text != "")
             {
@@ -168,14 +194,24 @@ namespace Login
         private void dgvLuong_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int r = e.RowIndex;
+            if(r >= 0)
+            {
+                txtMaBL.Enabled = true;
+                btnThem.Enabled = true;
+                btnSua.Enabled = true;
+                btnXoa.Enabled = true;
 
-            txtMaBL.Text = dgvLuong.Rows[r].Cells["maBangLuong"].Value.ToString();
-            txtMaNV.Text = dgvLuong.Rows[r].Cells["maNV"].Value.ToString();
-            txtNgayCong.Text = dgvLuong.Rows[r].Cells["ngayCong"].Value.ToString();
-            txtHSLuong.Text = dgvLuong.Rows[r].Cells["HSLuong"].Value.ToString();
-            txtThuong.Text = dgvLuong.Rows[r].Cells["Thuong"].Value.ToString();
-            txtTinhLuong.Text = dgvLuong.Rows[r].Cells["tongLuong"].Value.ToString();
-            cbThang.Text = dgvLuong.Rows[r].Cells["thang"].Value.ToString();
+                txtMaBL.Text = dgvLuong.Rows[r].Cells["maBangLuong"].Value.ToString();
+                txtMaNV.Text = dgvLuong.Rows[r].Cells["maNV"].Value.ToString();
+                txtNgayCong.Text = dgvLuong.Rows[r].Cells["ngayCong"].Value.ToString();
+                txtHSLuong.Text = dgvLuong.Rows[r].Cells["HSLuong"].Value.ToString();
+                txtThuong.Text = dgvLuong.Rows[r].Cells["Thuong"].Value.ToString();
+                txtTinhLuong.Text = dgvLuong.Rows[r].Cells["tongLuong"].Value.ToString();
+                cbThang.Text = dgvLuong.Rows[r].Cells["thang"].Value.ToString();
+
+            }
+            
+
 
         }
 
