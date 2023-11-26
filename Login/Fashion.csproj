@@ -400,6 +400,27 @@
   <ItemGroup>
     <None Include="Resources\trangchu.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4916983918620_dbf255f4825a54c1006f5d99448b2d96.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4917043345935_d11d68b645ad59e4d90ba3db1c9ad7df.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4916979765978_3f1557d3c8adb3c7558f8e9b102f8ce8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4916979768365_6d78daebfc510aaacd302210d41b84f0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4916979770487_ccf4bf0ac509aa3e48417a9b6cf71e64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lama.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

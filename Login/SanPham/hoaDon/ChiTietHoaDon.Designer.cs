@@ -76,7 +76,7 @@
             this.panel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.Location = new System.Drawing.Point(12, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1072, 64);
+            this.panel1.Size = new System.Drawing.Size(1036, 64);
             this.panel1.TabIndex = 1;
             // 
             // btnTimKiem
@@ -113,9 +113,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(12, 120);
+            this.groupBox1.Location = new System.Drawing.Point(12, 115);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1072, 162);
+            this.groupBox1.Size = new System.Drawing.Size(1036, 162);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chung";
@@ -209,11 +209,11 @@
             // dgvChiTietHoaDon
             // 
             this.dgvChiTietHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvChiTietHoaDon.Location = new System.Drawing.Point(12, 394);
+            this.dgvChiTietHoaDon.Location = new System.Drawing.Point(12, 382);
             this.dgvChiTietHoaDon.Name = "dgvChiTietHoaDon";
             this.dgvChiTietHoaDon.RowHeadersWidth = 51;
             this.dgvChiTietHoaDon.RowTemplate.Height = 24;
-            this.dgvChiTietHoaDon.Size = new System.Drawing.Size(1072, 466);
+            this.dgvChiTietHoaDon.Size = new System.Drawing.Size(1036, 292);
             this.dgvChiTietHoaDon.TabIndex = 15;
             this.dgvChiTietHoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietHoaDon_CellContentClick);
             // 
@@ -227,9 +227,9 @@
             this.groupBox2.Controls.Add(this.btnThoat);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(12, 288);
+            this.groupBox2.Location = new System.Drawing.Point(12, 277);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1072, 100);
+            this.groupBox2.Size = new System.Drawing.Size(1036, 89);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
@@ -237,7 +237,7 @@
             // btnThem
             // 
             this.btnThem.ForeColor = System.Drawing.Color.Black;
-            this.btnThem.Location = new System.Drawing.Point(34, 42);
+            this.btnThem.Location = new System.Drawing.Point(34, 34);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(123, 31);
             this.btnThem.TabIndex = 10;
@@ -249,7 +249,7 @@
             // 
             this.btnSua.Enabled = false;
             this.btnSua.ForeColor = System.Drawing.Color.Black;
-            this.btnSua.Location = new System.Drawing.Point(258, 42);
+            this.btnSua.Location = new System.Drawing.Point(258, 34);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(123, 31);
             this.btnSua.TabIndex = 11;
@@ -261,7 +261,7 @@
             // 
             this.btnXoa.Enabled = false;
             this.btnXoa.ForeColor = System.Drawing.Color.Black;
-            this.btnXoa.Location = new System.Drawing.Point(479, 42);
+            this.btnXoa.Location = new System.Drawing.Point(479, 34);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(123, 31);
             this.btnXoa.TabIndex = 12;
@@ -272,7 +272,7 @@
             // btnIn
             // 
             this.btnIn.ForeColor = System.Drawing.Color.Black;
-            this.btnIn.Location = new System.Drawing.Point(674, 42);
+            this.btnIn.Location = new System.Drawing.Point(674, 34);
             this.btnIn.Name = "btnIn";
             this.btnIn.Size = new System.Drawing.Size(123, 31);
             this.btnIn.TabIndex = 13;
@@ -282,7 +282,7 @@
             // btnThoat
             // 
             this.btnThoat.ForeColor = System.Drawing.Color.Black;
-            this.btnThoat.Location = new System.Drawing.Point(883, 42);
+            this.btnThoat.Location = new System.Drawing.Point(883, 34);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(121, 31);
             this.btnThoat.TabIndex = 14;
@@ -294,8 +294,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Login.Properties.Resources.z4732706846840_6715b18e9054cfc0a4770a0b9ea2ab1f;
-            this.ClientSize = new System.Drawing.Size(1096, 872);
+            this.BackgroundImage = global::Login.Properties.Resources.z4917043345935_d11d68b645ad59e4d90ba3db1c9ad7df;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1073, 690);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dgvChiTietHoaDon);
             this.Controls.Add(this.groupBox1);

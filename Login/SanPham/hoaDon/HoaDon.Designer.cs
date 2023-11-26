@@ -35,6 +35,7 @@
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtMaHD = new System.Windows.Forms.TextBox();
             this.cmbMaNV = new System.Windows.Forms.ComboBox();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.dtNgayBan = new System.Windows.Forms.DateTimePicker();
@@ -52,7 +53,6 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.dgvHienThi = new System.Windows.Forms.DataGridView();
-            this.txtMaHD = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -70,7 +70,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1120, 53);
+            this.panel1.Size = new System.Drawing.Size(1058, 74);
             this.panel1.TabIndex = 1;
             // 
             // label2
@@ -101,10 +101,10 @@
             this.panel2.Controls.Add(this.txtTimKiem);
             this.panel2.Controls.Add(this.btnTimKiem);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 53);
+            this.panel2.Location = new System.Drawing.Point(0, 74);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1120, 57);
+            this.panel2.Size = new System.Drawing.Size(1058, 81);
             this.panel2.TabIndex = 2;
             // 
             // txtTimKiem
@@ -144,14 +144,21 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(0, 110);
+            this.groupBox1.Location = new System.Drawing.Point(0, 155);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1120, 135);
+            this.groupBox1.Size = new System.Drawing.Size(1058, 169);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chung:";
+            // 
+            // txtMaHD
+            // 
+            this.txtMaHD.Location = new System.Drawing.Point(127, 43);
+            this.txtMaHD.Name = "txtMaHD";
+            this.txtMaHD.Size = new System.Drawing.Size(235, 26);
+            this.txtMaHD.TabIndex = 23;
             // 
             // cmbMaNV
             // 
@@ -221,25 +228,26 @@
             // splitter1
             // 
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter1.Location = new System.Drawing.Point(0, 245);
+            this.splitter1.Location = new System.Drawing.Point(0, 324);
             this.splitter1.Margin = new System.Windows.Forms.Padding(4);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(1120, 4);
+            this.splitter1.Size = new System.Drawing.Size(1058, 5);
             this.splitter1.TabIndex = 4;
             this.splitter1.TabStop = false;
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.dgvHienThi);
             this.groupBox2.Controls.Add(this.btnCTHoaDon);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(0, 249);
+            this.groupBox2.Location = new System.Drawing.Point(0, 329);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(1120, 89);
+            this.groupBox2.Size = new System.Drawing.Size(1058, 299);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin các sản phẩm:";
@@ -258,10 +266,10 @@
             // splitter2
             // 
             this.splitter2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter2.Location = new System.Drawing.Point(0, 338);
+            this.splitter2.Location = new System.Drawing.Point(0, 628);
             this.splitter2.Margin = new System.Windows.Forms.Padding(4);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(1120, 4);
+            this.splitter2.Size = new System.Drawing.Size(1058, 5);
             this.splitter2.TabIndex = 6;
             this.splitter2.TabStop = false;
             // 
@@ -274,10 +282,10 @@
             this.panel3.Controls.Add(this.btnXoa);
             this.panel3.Controls.Add(this.btnThem);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 342);
+            this.panel3.Location = new System.Drawing.Point(0, 633);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1120, 62);
+            this.panel3.Size = new System.Drawing.Size(1058, 70);
             this.panel3.TabIndex = 8;
             // 
             // btnThoat
@@ -342,29 +350,21 @@
             // dgvHienThi
             // 
             this.dgvHienThi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHienThi.Location = new System.Drawing.Point(12, 421);
+            this.dgvHienThi.Location = new System.Drawing.Point(5, 85);
             this.dgvHienThi.Name = "dgvHienThi";
             this.dgvHienThi.RowHeadersWidth = 51;
             this.dgvHienThi.RowTemplate.Height = 24;
-            this.dgvHienThi.Size = new System.Drawing.Size(1096, 365);
+            this.dgvHienThi.Size = new System.Drawing.Size(1046, 212);
             this.dgvHienThi.TabIndex = 9;
             this.dgvHienThi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHienThi_CellContentClick);
-            // 
-            // txtMaHD
-            // 
-            this.txtMaHD.Location = new System.Drawing.Point(127, 43);
-            this.txtMaHD.Name = "txtMaHD";
-            this.txtMaHD.Size = new System.Drawing.Size(235, 26);
-            this.txtMaHD.TabIndex = 23;
             // 
             // HoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Login.Properties.Resources.background_xanh_duong_scaled_1;
+            this.BackgroundImage = global::Login.Properties.Resources.z4917043345935_d11d68b645ad59e4d90ba3db1c9ad7df;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1120, 798);
-            this.Controls.Add(this.dgvHienThi);
+            this.ClientSize = new System.Drawing.Size(1058, 716);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.splitter2);
             this.Controls.Add(this.groupBox2);

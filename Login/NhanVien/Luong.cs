@@ -86,16 +86,32 @@ namespace Login
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            
-            string truyVan = $"INSERT INTO Luong VALUES ('{txtMaBL.Text}','{txtMaNV.Text}',{txtNgayCong.Text},{txtHSLuong.Text},{txtThuong.Text},{tinhLuong(txtHSLuong.Text, txtNgayCong.Text, txtThuong.Text)},{cbThang.Text})";
-
+            string CheckQueryBL = $"select * from Luong where maBangLuong = N'{txtMaBL.Text}'";
+            string CheckQueryNV = $"select * from NhanVien where maNV = N'{txtMaNV.Text}'";
+            int rowBL = kn.LayDuLieu(CheckQueryBL).Rows.Count;
+            int rowNV = kn.LayDuLieu(CheckQueryNV).Rows.Count;
             if (txtMaNV.Text != "")
             {
-                if (kn.ThucThi(truyVan))
+                if(rowBL > 0)
+                {   
+                    MessageBox.Show("Mã bảng lương đã tồn tại!");
+                }
+                else
                 {
-                    MessageBox.Show("Thêm thành công!");
-                    getdata();
-                    refresh_tb();
+                    if(rowNV == 0)
+                    {
+                        MessageBox.Show("Không tồn tại mã nhân viên!");
+                    }
+                    else
+                    {
+                        string truyVan = $"INSERT INTO Luong VALUES ('{txtMaBL.Text}','{txtMaNV.Text}',{txtNgayCong.Text},{txtHSLuong.Text},{txtThuong.Text},{tinhLuong(txtHSLuong.Text, txtNgayCong.Text, txtThuong.Text)},{cbThang.Text})";
+                        if (kn.ThucThi(truyVan))
+                        {
+                            MessageBox.Show("Thêm thành công!");
+                            getdata();
+                            refresh_tb();
+                        }
+                    }
                 }
             }
             else
@@ -106,8 +122,9 @@ namespace Login
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            
-            string truyVan = string.Format("UPDATE LUONG SET ngayCong ={2}, HSluong = {3}, Thuong = {4}, tongLuong ={5}, thang ='{6}' WHERE maNV ='{1}'AND maBangLuong ='{0}'",
+            if (txtMaNV.Text != "")
+            {
+                string truyVan = string.Format("UPDATE LUONG SET ngayCong ={2}, HSluong = {3}, Thuong = {4}, tongLuong ={5}, thang ='{6}' WHERE maNV ='{1}'AND maBangLuong ='{0}'",
                                             txtMaBL.Text,
                                             txtMaNV.Text,
                                             txtNgayCong.Text,
@@ -115,9 +132,6 @@ namespace Login
                                             txtThuong.Text,
                                             tinhLuong(txtHSLuong.Text, txtNgayCong.Text, txtThuong.Text),
                                             cbThang.Text);
-
-            if (txtMaNV.Text != "")
-            {
                 if (kn.ThucThi(truyVan))
                 {
                     MessageBox.Show("sửa thành công!");

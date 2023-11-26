@@ -144,7 +144,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 22.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(372, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 43);
+            this.label1.Size = new System.Drawing.Size(156, 43);
             this.label1.TabIndex = 1;
             this.label1.Text = "Đăng Ký";
             // 
@@ -162,8 +162,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Login.Properties.Resources.z4732706846840_6715b18e9054cfc0a4770a0b9ea2ab1f;
-            this.ClientSize = new System.Drawing.Size(885, 490);
+            this.BackgroundImage = global::Login.Properties.Resources.z4917043345935_d11d68b645ad59e4d90ba3db1c9ad7df;
+            this.ClientSize = new System.Drawing.Size(959, 528);
             this.Controls.Add(this.panel1);
             this.Name = "DangKy";
             this.Text = "DangKy";
