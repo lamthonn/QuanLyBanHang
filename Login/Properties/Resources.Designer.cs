@@ -19,7 +19,7 @@ namespace Login.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,6 +63,86 @@ namespace Login.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _11zon_cropped {
+            get {
+                object obj = ResourceManager.GetObject("11zon_cropped", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _11zon_cropped__1_ {
+            get {
+                object obj = ResourceManager.GetObject("11zon_cropped (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4a90f6c05305880066b6e2de418ec01a {
+            get {
+                object obj = ResourceManager.GetObject("4a90f6c05305880066b6e2de418ec01a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _55a69705ec074415770f8dbe03d83392 {
+            get {
+                object obj = ResourceManager.GetObject("55a69705ec074415770f8dbe03d83392", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5b6a07f0fb777fb6db4e1f2735e4444e {
+            get {
+                object obj = ResourceManager.GetObject("5b6a07f0fb777fb6db4e1f2735e4444e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _792e1171dc7763d141c627e904c39b65 {
+            get {
+                object obj = ResourceManager.GetObject("792e1171dc7763d141c627e904c39b65", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _87cb03c1a20cbe31d1183268076e8365 {
+            get {
+                object obj = ResourceManager.GetObject("87cb03c1a20cbe31d1183268076e8365", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap a6b9c81b570a387461994c9b8896cf14 {
+            get {
+                object obj = ResourceManager.GetObject("a6b9c81b570a387461994c9b8896cf14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background_xanh_duong_scaled_1 {
             get {
                 object obj = ResourceManager.GetObject("background-xanh-duong-scaled-1", resourceCulture);
@@ -83,9 +163,40 @@ namespace Login.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap d904bfedaf47466b73e3ee87e6e431de {
+            get {
+                object obj = ResourceManager.GetObject("d904bfedaf47466b73e3ee87e6e431de", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_shoe_sneakers_converse_clip_art_pictures_of_sneakers_5a77934a22f7b9_6510350415177859301432 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-shoe-sneakers-converse-clip-art-pictures-of-sneakers-5a77934a22f7b9.65103" +
+                        "50415177859301432", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lama {
             get {
                 object obj = ResourceManager.GetObject("lama", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logoPhongCircle {
+            get {
+                object obj = ResourceManager.GetObject("logoPhongCircle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

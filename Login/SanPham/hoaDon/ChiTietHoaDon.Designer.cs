@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChiTietHoaDon));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnTimKiem = new System.Windows.Forms.Button();
@@ -37,18 +38,17 @@
             this.cmbMaSP = new System.Windows.Forms.ComboBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.txtGiamGia = new System.Windows.Forms.TextBox();
-            this.btnLamMoi = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnLamMoi = new System.Windows.Forms.Button();
             this.dgvChiTietHoaDon = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.btnIn = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -81,11 +81,11 @@
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnTimKiem.Location = new System.Drawing.Point(202, 15);
+            this.btnTimKiem.Location = new System.Drawing.Point(185, 15);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(92, 31);
+            this.btnTimKiem.Size = new System.Drawing.Size(109, 31);
             this.btnTimKiem.TabIndex = 0;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
@@ -105,7 +105,6 @@
             this.groupBox1.Controls.Add(this.cmbMaSP);
             this.groupBox1.Controls.Add(this.txtSoLuong);
             this.groupBox1.Controls.Add(this.txtGiamGia);
-            this.groupBox1.Controls.Add(this.btnLamMoi);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -149,17 +148,6 @@
             this.txtGiamGia.Name = "txtGiamGia";
             this.txtGiamGia.Size = new System.Drawing.Size(241, 26);
             this.txtGiamGia.TabIndex = 5;
-            // 
-            // btnLamMoi
-            // 
-            this.btnLamMoi.ForeColor = System.Drawing.Color.Black;
-            this.btnLamMoi.Location = new System.Drawing.Point(434, 112);
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(118, 34);
-            this.btnLamMoi.TabIndex = 9;
-            this.btnLamMoi.Text = "Làm mới";
-            this.btnLamMoi.UseVisualStyleBackColor = true;
-            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // label6
             // 
@@ -206,6 +194,18 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã sản phẩm:";
             // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLamMoi.ForeColor = System.Drawing.Color.Black;
+            this.btnLamMoi.Location = new System.Drawing.Point(820, 32);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(135, 34);
+            this.btnLamMoi.TabIndex = 9;
+            this.btnLamMoi.Text = "Làm mới";
+            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            // 
             // dgvChiTietHoaDon
             // 
             this.dgvChiTietHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -223,8 +223,7 @@
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Controls.Add(this.btnSua);
             this.groupBox2.Controls.Add(this.btnXoa);
-            this.groupBox2.Controls.Add(this.btnIn);
-            this.groupBox2.Controls.Add(this.btnThoat);
+            this.groupBox2.Controls.Add(this.btnLamMoi);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(12, 277);
@@ -236,10 +235,11 @@
             // 
             // btnThem
             // 
+            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.Black;
-            this.btnThem.Location = new System.Drawing.Point(34, 34);
+            this.btnThem.Location = new System.Drawing.Point(108, 34);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(123, 31);
+            this.btnThem.Size = new System.Drawing.Size(140, 31);
             this.btnThem.TabIndex = 10;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -248,10 +248,11 @@
             // btnSua
             // 
             this.btnSua.Enabled = false;
+            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.Black;
-            this.btnSua.Location = new System.Drawing.Point(258, 34);
+            this.btnSua.Location = new System.Drawing.Point(340, 34);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(123, 31);
+            this.btnSua.Size = new System.Drawing.Size(140, 31);
             this.btnSua.TabIndex = 11;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -260,33 +261,25 @@
             // btnXoa
             // 
             this.btnXoa.Enabled = false;
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.Black;
-            this.btnXoa.Location = new System.Drawing.Point(479, 34);
+            this.btnXoa.Location = new System.Drawing.Point(584, 34);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(123, 31);
+            this.btnXoa.Size = new System.Drawing.Size(140, 31);
             this.btnXoa.TabIndex = 12;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // btnIn
-            // 
-            this.btnIn.ForeColor = System.Drawing.Color.Black;
-            this.btnIn.Location = new System.Drawing.Point(674, 34);
-            this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(123, 31);
-            this.btnIn.TabIndex = 13;
-            this.btnIn.Text = "In chi tiết";
-            this.btnIn.UseVisualStyleBackColor = true;
-            // 
             // btnThoat
             // 
+            this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.Black;
-            this.btnThoat.Location = new System.Drawing.Point(883, 34);
+            this.btnThoat.Location = new System.Drawing.Point(12, 9);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(121, 31);
             this.btnThoat.TabIndex = 14;
-            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Text = "Quay lại";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
@@ -294,14 +287,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Login.Properties.Resources.z4917043345935_d11d68b645ad59e4d90ba3db1c9ad7df;
+            this.BackgroundImage = global::Login.Properties.Resources.a6b9c81b570a387461994c9b8896cf14;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1073, 690);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dgvChiTietHoaDon);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChiTietHoaDon";
             this.Text = "Chi Tiết Hóa Đơn";
             this.Load += new System.EventHandler(this.ChiTietHoaDon_Load);
@@ -338,7 +333,6 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnIn;
         private System.Windows.Forms.Button btnThoat;
     }
 }

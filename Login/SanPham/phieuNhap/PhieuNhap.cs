@@ -84,10 +84,10 @@ namespace Login
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string truy_van = string.Format("insert into PhieuNhap values('{0}','{1}','{2}',0,'{4}')",
+            string truy_van = string.Format("insert into PhieuNhap values('{0}','{1}','{2}',0,'{3}')",
                 txtMaPN.Text,
                 cmbMaNCC.SelectedValue,
-                dtNgayNhap.Text,
+                dtNgayNhap.Value,
                 cmbMaNV.SelectedValue
                 );
             if (kn.ThucThi(truy_van) == true)

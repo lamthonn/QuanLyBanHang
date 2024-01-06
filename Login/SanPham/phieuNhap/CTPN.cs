@@ -42,7 +42,7 @@ namespace Login
 
         public void GetData()
         {
-            string truyVan = "SELECT * FROM CTPN";
+            string truyVan = "SELECT * FROM CTPhieuNhap";
             dgvChiTietHoaDon.DataSource = kn.LayDuLieu(truyVan);
         }
 
@@ -54,7 +54,7 @@ namespace Login
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string truyVan = string.Format("INSERT INTO CTPN VALUES('{0}', '{1}', '{2}', '{3}')",
+            string truyVan = string.Format("INSERT INTO CTPhieuNhap VALUES('{0}', '{1}', '{2}', '{3}')",
                 cmbMaPN.SelectedValue,
                 txtSoLuong.Text,
                 txtDonGia.Text,
@@ -75,7 +75,7 @@ namespace Login
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string truy_van = string.Format("update CTPN set  soLuong='{0}', donGia='{1}' where maPN='{2}' and maSP='{3}'",
+            string truy_van = string.Format("update CTPhieuNhap set  soLuong='{0}', donGia='{1}' where maPN='{2}' and maSP='{3}'",
                 
                 txtSoLuong.Text,
                 txtDonGia.Text,
@@ -95,7 +95,7 @@ namespace Login
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string truy_van = string.Format("delete from SanPham where maPN ='{0}'",
+            string truy_van = string.Format("delete from CTPhieuNhap where maPN ='{0}'",
                 cmbMaPN.SelectedValue
             );
             if (kn.ThucThi(truy_van) == true)
@@ -129,7 +129,7 @@ namespace Login
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            string truy_van = string.Format("select * from CTPN where maPN like '%{0}%' or maSP like '%{0}%'",
+            string truy_van = string.Format("select * from CTPhieuNhap where maPN like '%{0}%' or maSP like '%{0}%'",
                 txtTimKiem.Text
             );
             dgvChiTietHoaDon.DataSource = kn.LayDuLieu(truy_van);

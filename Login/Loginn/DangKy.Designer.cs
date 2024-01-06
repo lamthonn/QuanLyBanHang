@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangKy));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.btnDangKy = new System.Windows.Forms.Button();
@@ -58,14 +59,14 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(89, 56);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(723, 367);
+            this.panel1.Size = new System.Drawing.Size(770, 407);
             this.panel1.TabIndex = 0;
             // 
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(531, 301);
+            this.button2.Location = new System.Drawing.Point(534, 323);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(105, 41);
             this.button2.TabIndex = 9;
@@ -77,7 +78,7 @@
             // 
             this.btnDangKy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangKy.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnDangKy.Location = new System.Drawing.Point(390, 301);
+            this.btnDangKy.Location = new System.Drawing.Point(278, 323);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(105, 41);
             this.btnDangKy.TabIndex = 8;
@@ -165,8 +166,9 @@
             this.BackgroundImage = global::Login.Properties.Resources.z4917043345935_d11d68b645ad59e4d90ba3db1c9ad7df;
             this.ClientSize = new System.Drawing.Size(959, 528);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DangKy";
-            this.Text = "DangKy";
+            this.Text = "Đăng ký";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

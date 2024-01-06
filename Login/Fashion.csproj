@@ -421,6 +421,39 @@
   <ItemGroup>
     <None Include="Resources\lama.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoPhongCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\55a69705ec074415770f8dbe03d83392.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a6b9c81b570a387461994c9b8896cf14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d904bfedaf47466b73e3ee87e6e431de.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11zon_cropped %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11zon_cropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4a90f6c05305880066b6e2de418ec01a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5b6a07f0fb777fb6db4e1f2735e4444e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\87cb03c1a20cbe31d1183268076e8365.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\792e1171dc7763d141c627e904c39b65.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-shoe-sneakers-converse-clip-art-pictures-of-sneakers-5a77934a22f7b9.6510350415177859301432.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

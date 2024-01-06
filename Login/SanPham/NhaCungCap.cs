@@ -110,7 +110,7 @@ namespace Login
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string truy_van = string.Format("delete from NhaCungCap where maNCC ='{0}'",
+            string truy_van = string.Format("delete from NhaCungCap where maNCC =N'{0}'",
                 txtMaNCC.Text
             );
             if (kn.ThucThi(truy_van) == true)
@@ -130,6 +130,11 @@ namespace Login
                 txtTimKiem.Text
             );
             dgvNhaCungCap.DataSource = kn.LayDuLieu(truy_van);
+        }
+
+        private void txtTenNCC_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

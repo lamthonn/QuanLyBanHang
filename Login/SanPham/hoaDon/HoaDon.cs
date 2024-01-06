@@ -68,7 +68,7 @@ namespace Login
         {
             string truy_van = string.Format("insert into hoaDon values('{0}','{1}','{2}',0)",
             txtMaHD.Text,
-            dtNgayBan.Text,
+            dtNgayBan.Value,
             cmbMaNV.SelectedValue
             );
             if (kn.ThucThi(truy_van) == true)
@@ -90,8 +90,8 @@ namespace Login
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string truy_van = string.Format("update hoaDon set ngayBan='{0}', maNV='{1}', tongHoaDon='{4}' where maHoaDon='{2}'",
-                dtNgayBan.Text,
+            string truy_van = string.Format("update hoaDon set ngayBan='{0}', maNV='{1}' where maHoaDon='{2}'",
+                dtNgayBan.Value,
                 cmbMaNV.SelectedValue,
                 txtMaHD.Text
             );
@@ -122,7 +122,7 @@ namespace Login
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            string truy_van = string.Format("select * from maHoaDon where maHoaDon like '%{0}%' or ngayBan like '%{0}%' or maNV like '%{0}%'",
+            string truy_van = string.Format("select * from hoadon where maHoaDon like '%{0}%' or ngayBan like '%{0}%' or maNV like '%{0}%'",
                 txtTimKiem.Text
             );
             dgvHienThi.DataSource = kn.LayDuLieu(truy_van);

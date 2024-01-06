@@ -118,43 +118,76 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="phan-mem-quan-ly-cua-hang-thoi-trang" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phan-mem-quan-ly-cua-hang-thoi-trang.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="background-xanh-duong-scaled-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background-xanh-duong-scaled-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="z4732706846840_6715b18e9054cfc0a4770a0b9ea2ab1f" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\z4732706846840_6715b18e9054cfc0a4770a0b9ea2ab1f.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="trangchu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trangchu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="z4916979770487_ccf4bf0ac509aa3e48417a9b6cf71e64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\z4916979770487_ccf4bf0ac509aa3e48417a9b6cf71e64.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="55a69705ec074415770f8dbe03d83392" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\55a69705ec074415770f8dbe03d83392.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="register-la-gi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\register-la-gi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="z4916979765978_3f1557d3c8adb3c7558f8e9b102f8ce8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\z4916979765978_3f1557d3c8adb3c7558f8e9b102f8ce8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="z4917043345935_d11d68b645ad59e4d90ba3db1c9ad7df" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z4917043345935_d11d68b645ad59e4d90ba3db1c9ad7df.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="phan-mem-quan-ly-cua-hang-thoi-trang1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phan-mem-quan-ly-cua-hang-thoi-trang1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="phan-mem-quan-ly-cua-hang-thoi-trang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phan-mem-quan-ly-cua-hang-thoi-trang.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d904bfedaf47466b73e3ee87e6e431de" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d904bfedaf47466b73e3ee87e6e431de.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="z4916983918620_dbf255f4825a54c1006f5d99448b2d96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z4916983918620_dbf255f4825a54c1006f5d99448b2d96.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="z4916979768365_6d78daebfc510aaacd302210d41b84f0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\z4916979768365_6d78daebfc510aaacd302210d41b84f0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logoPhongCircle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoPhongCircle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background-xanh-duong-scaled-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background-xanh-duong-scaled-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="z4917043345935_d11d68b645ad59e4d90ba3db1c9ad7df" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\z4917043345935_d11d68b645ad59e4d90ba3db1c9ad7df.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="87cb03c1a20cbe31d1183268076e8365" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\87cb03c1a20cbe31d1183268076e8365.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5b6a07f0fb777fb6db4e1f2735e4444e" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5b6a07f0fb777fb6db4e1f2735e4444e.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4a90f6c05305880066b6e2de418ec01a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4a90f6c05305880066b6e2de418ec01a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11zon_cropped (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11zon_cropped (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="a6b9c81b570a387461994c9b8896cf14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a6b9c81b570a387461994c9b8896cf14.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lama" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lama.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z4916979770487_ccf4bf0ac509aa3e48417a9b6cf71e64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z4916979770487_ccf4bf0ac509aa3e48417a9b6cf71e64.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z4916979765978_3f1557d3c8adb3c7558f8e9b102f8ce8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z4916979765978_3f1557d3c8adb3c7558f8e9b102f8ce8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z4732706846840_6715b18e9054cfc0a4770a0b9ea2ab1f" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z4732706846840_6715b18e9054cfc0a4770a0b9ea2ab1f.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11zon_cropped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11zon_cropped.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="792e1171dc7763d141c627e904c39b65" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\792e1171dc7763d141c627e904c39b65.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z4916979768365_6d78daebfc510aaacd302210d41b84f0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z4916979768365_6d78daebfc510aaacd302210d41b84f0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-shoe-sneakers-converse-clip-art-pictures-of-sneakers-5a77934a22f7b9.6510350415177859301432" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-shoe-sneakers-converse-clip-art-pictures-of-sneakers-5a77934a22f7b9.6510350415177859301432.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

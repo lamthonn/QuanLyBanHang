@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongKeDoanhthu));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.dtpThongKe = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dgvThongKe = new System.Windows.Forms.DataGridView();
-            this.btnExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -47,17 +48,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(171, 21);
+            this.label1.Location = new System.Drawing.Point(276, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(555, 68);
+            this.label1.Size = new System.Drawing.Size(366, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Thống Kê Doanh Thu";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::Login.Properties.Resources._55a69705ec074415770f8dbe03d83392;
+            this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -68,7 +71,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.btnExit);
             this.panel2.Controls.Add(this.btnThongKe);
             this.panel2.Controls.Add(this.dtpThongKe);
             this.panel2.Controls.Add(this.label2);
@@ -78,9 +80,21 @@
             this.panel2.Size = new System.Drawing.Size(897, 155);
             this.panel2.TabIndex = 2;
             // 
+            // btnExit
+            // 
+            this.btnExit.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(24, 34);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(158, 34);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // btnThongKe
             // 
-            this.btnThongKe.Location = new System.Drawing.Point(636, 101);
+            this.btnThongKe.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKe.Location = new System.Drawing.Point(314, 92);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Size = new System.Drawing.Size(158, 34);
             this.btnThongKe.TabIndex = 2;
@@ -90,7 +104,7 @@
             // 
             // dtpThongKe
             // 
-            this.dtpThongKe.Location = new System.Drawing.Point(600, 63);
+            this.dtpThongKe.Location = new System.Drawing.Point(513, 45);
             this.dtpThongKe.Name = "dtpThongKe";
             this.dtpThongKe.Size = new System.Drawing.Size(223, 22);
             this.dtpThongKe.TabIndex = 1;
@@ -100,9 +114,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(544, 25);
+            this.label2.Location = new System.Drawing.Point(117, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(331, 26);
+            this.label2.Size = new System.Drawing.Size(339, 27);
             this.label2.TabIndex = 0;
             this.label2.Text = "Thống Kê Doanh Thu Theo Ngày:";
             // 
@@ -126,28 +140,19 @@
             this.dgvThongKe.Size = new System.Drawing.Size(897, 297);
             this.dgvThongKe.TabIndex = 0;
             // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(53, 101);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(158, 34);
-            this.btnExit.TabIndex = 3;
-            this.btnExit.Text = "Thoát";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // ThongKeDoanhthu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Login.Properties.Resources.z4732706846840_6715b18e9054cfc0a4770a0b9ea2ab1f;
+            this.BackgroundImage = global::Login.Properties.Resources._55a69705ec074415770f8dbe03d83392;
             this.ClientSize = new System.Drawing.Size(897, 563);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ThongKeDoanhthu";
-            this.Text = "ThongKeHangTon";
+            this.Text = "Thống kê doanh thu";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
